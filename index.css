@@ -1,0 +1,97 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: darkgoldenrod;
+}
+.full{
+    position: absolute;
+    top: 45%;
+}
+.bus{
+    background-color: red;
+    height: 200px;
+    width: 500px;
+    position: absolute;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    animation-name: drive;
+    animation-duration: 10s;
+}
+.bus::before{
+    position: absolute;
+    content: "";
+    background-color: rgb(78, 78, 78);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    top: 84%;
+    left: 20%;
+    border: 7px dashed black;
+    animation: rotate 1s linear infinite;
+
+}
+.bus::after{
+    position: absolute;
+    content: "";
+    background-color: rgb(78, 78, 78);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    top: 84%;
+    left: 75%;
+    border: 7px dashed black;
+    animation: rotate 1s linear infinite;
+}
+.door{
+    background-color: skyblue;
+    border: 3px solid black;
+    height: 140px;
+    width: 60px;
+    position: absolute;
+    top: 18%;
+    left: 8%;
+    border-radius: 10px;
+    
+}
+.windows{
+    background-color: skyblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    left: 33%;
+    top: 19%;
+}
+.box{
+ 
+    width: 74px;
+    height: 60px;
+    border-right: 2px solid black;
+    float: left;
+}
+.none{
+    border-right: none;
+}
+
+@keyframes drive{
+    from{
+        right: -2000px;
+    }
+    to{
+        right: -500px;
+    }
+}
+
+  @keyframes rotate {
+    from {
+    
+        transform: rotate(360deg);
+    }
+    to{
+      
+        transform: rotate(0deg);
+    }
+  }
