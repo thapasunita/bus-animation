@@ -55,6 +55,14 @@ body{
     border-radius: 10px;
     
 }
+.door-line{
+    background-color: black;
+    height: 140px;
+    width: 3px;
+    position: relative;
+    left: 47%;
+  
+}
 .windows{
     background-color: skyblue;
     border: 2px solid black;
