@@ -16,9 +16,8 @@ body{
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    animation-name: drive;
-    animation-duration: 10s;
 }
+
 .bus::before{
     position: absolute;
     content: "";
@@ -29,8 +28,6 @@ body{
     top: 84%;
     left: 20%;
     border: 7px dashed black;
-    animation: rotate 1s linear infinite;
-
 }
 .bus::after{
     position: absolute;
@@ -42,8 +39,21 @@ body{
     top: 84%;
     left: 75%;
     border: 7px dashed black;
+}
+
+
+.move-bus {
+    animation-name: drive;
+    animation-duration: 10s;
+}
+.move-bus::before {
     animation: rotate 1s linear infinite;
 }
+
+.move-bus::after {
+    animation: rotate 1s linear infinite;
+}
+
 .door{
     background-color: skyblue;
     border: 3px solid black;

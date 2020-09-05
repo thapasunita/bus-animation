@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
+<body >
     <div class="full">
-        <div class="bus" id='mybus'>
+        <div class="bus move-bus" id='mybus'  >
             <div class="door">
                 <div class="door-line"></div>
             </div>
@@ -24,6 +24,17 @@
             </div> 
         </div>
     </div>
-</body>
 
+    <script>
+        
+        var bus = document.getElementById("mybus");
+        bus.addEventListener('animationend', myFunction );
+
+        function myFunction() {
+           bus.classList.remove("move-bus");
+        }
+
+    
+    </script>
+</body>
 </html>
